@@ -6,3 +6,9 @@
   {%endfor%}
 
 {% endmacro %}
+
+{% macro displayArticles(article_list) %}
+  {% for article in article_list%}
+    <li> {{article.author}}</li>
+  {% endfor %}
+{% endmacro %}
