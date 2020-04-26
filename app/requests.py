@@ -1,5 +1,5 @@
-import urllib.request.json
-from models import Source,Article
+import urllib.request,json
+from .models import Source,Article
 
 #Getting Api key 
 api_key = None
@@ -71,22 +71,23 @@ def get_top_articles(id):
   print(get_articles_details_url)
   print("-"*50)
 
-  article_details_data = url.read()
-  article_details_response = json.loads(article_details_data)
+  with urllib.request.urlopen(get_articles_details_url) as url:
+    article_details_data = url.read()
+    article_details_response = json.loads(article_details_data)
 
-   if article_details_response['articles']:
-      article_list = article_details_response['articles']
+  if article_details_response['articles']:
+    article_list = article_details_response['articles']
 
-    articles_available = []
-    for article in article_list:
-      author = article.get('author')
-      title = article.get('title')
-      publishedAt = article.get('publishedAt')
-      url = article.get('url')
+  articles_available = []
+  for article in article_list:
+    author = article.get('author')
+    title = article.get('title')
+    publishedAt = article.get('publishedAt')
+    url = article.get('url')
 
 
-      article_object = Article(author, title, publishedAt, url)
+    article_object = Article(author, title, publishedAt, url)
 
-      articles_available.append(article_object)
+    articles_available.append(article_object)
 
   return articles_available
