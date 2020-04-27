@@ -82,11 +82,12 @@ def get_top_articles(id):
   for article in article_list:
     author = article.get('author')
     title = article.get('title')
+    imageurl = article.get('urlToImage')
     publishedAt = article.get('publishedAt')
     url = article.get('url')
 
 
-    article_object = Article(author, title, publishedAt, url)
+    article_object = Article(author, title,imageurl, publishedAt, url)
 
     articles_available.append(article_object)
 
