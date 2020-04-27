@@ -22,5 +22,6 @@ def articles(sourceId):
   '''
   articles = get_top_articles(sourceId)
   title = f"{sourceId} articles"
+  header = sourceId.upper()
 
-  return render_template("articles.html", title=title, articles=articles)
+  return render_template("articles.html", title=title, header = header, articles=articles)
