@@ -1,7 +1,9 @@
 #header h1 {
   font-family: 'Playfair Display', serif;
   text-align: center;
-  font-size: 70px
+  font-size: 80px;
+  color: #F3DFA2;
+
 }
 
 #header p {
@@ -18,7 +20,7 @@
 }
 
 .source-card {
-  border: solid yellow 2px;
+  border: solid #EFE6DD 2px;
   height: 350px;
   width: 250px;
   padding: 15px;
@@ -30,7 +32,7 @@
 }
 
 #source-title {
-  color: red;
+  color: #BB4430;
   font-weight: bold;
 
 }
