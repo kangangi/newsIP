@@ -16,7 +16,7 @@ An application uses NewsAPI to list news from various sources and provide links 
 3. Python
 4. Flask
 5. Git , GitHub and Heroku
-Set up and Installation
+
 
 ## Prerequisites
 The user will require git and python3.6+ installed in their machine. To install these two, you can use the following commands:
