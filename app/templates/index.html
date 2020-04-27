@@ -1,14 +1,20 @@
 {% extends 'base.html' %}
 {% import 'macros.html' as macro%}
 
-{% block styles%}
-  {{ super() }}
-  <link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}">
+{% block styles %}
+{{ super() }}
+<link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}" type="text/css">
+<link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
 {% endblock %}
 
 {% block content %}
-<h1> NEWS APP </h1>
-<hr>
+<div id="header">
+  <h1> NEWS FEED </h1>
+  <p> Your trusted news-source</p>
+  <hr>
+  <h2>News Selection</h2>
+</div>
 <ul>
   {{macro.displaySourceList(sources)}}
 </ul>
