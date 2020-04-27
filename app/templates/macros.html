@@ -8,6 +8,7 @@
       <h5 class="card-subtitle mb-2 text-muted"> category: {{source.category}}</h5>
       <p class="card-text"> description: {{source.description}} </p>
       <a href="/article/{{source.id}}" class="card-link">View articles</a>
+      <br>
       <a href={{source.url}} class="card-link">Visit site</a>
     </div>
   </div>
@@ -17,11 +18,10 @@
 
 {% macro displayArticles(article_list) %}
 {% for article in article_list%}
-<h3>{{article.title}}</h3>
-<hr>
-<p> by: {{article.author}}</p>
-<p> published on : {{article.publishedAt}}</p>
-<a href={{article.url}}>Read article</a>
-
+<div id="articles">
+  <h3>{{article.title}}</h4>
+  <p> published on : {{article.publishedAt}}</p>
+  <a href={{article.url}}>Read article</a>
+</div>
 {% endfor %}
 {% endmacro %}

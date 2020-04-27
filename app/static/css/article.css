@@ -1,0 +1,20 @@
+ h1 {
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+  font-size: 50px
+}
+
+#articles  {
+  font-family: 'Signika Negative', sans-serif;
+  text-align: center;
+  font-size: 20px;
+
+}
+
+#articles h3{
+  font-family: 'Playfair Display',serif;
+  color: darkslategrey;
+  font-weight: bold;
+  
+} 
+
