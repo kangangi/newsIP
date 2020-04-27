@@ -1,5 +1,8 @@
 {% extends 'bootstrap/base.html'%}
-
+<!-- Navbar block  -->
+{% block navbar %}
+{% include 'navbar.html' %}
+{% endblock %}
 <!DOCTYPE html>
 <html>
 
@@ -14,7 +17,7 @@
 
 <body>
   <!-- Content block -->
-  <div class="container">
+  <div class="container-fluid">
   {% block content %}
 
   {% endblock%}
