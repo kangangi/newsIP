@@ -40,4 +40,4 @@ Currently, there are no bugs. Contact @wanjikukangangi@gmail.com for more inform
 ## Licence
 This project is under the **MIT** licence
 
-Copyright (c) 2018 **Diana Kangangi**
+Copyright (c) 2020 **Diana Kangangi**
